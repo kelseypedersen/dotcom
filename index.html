@@ -1,32 +1,160 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kelsey Pedersen</title>
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
 </head>
 <body>
-<nav>
-  <ul>
-    <li><a href="/"></a></li>
-    <li><a href="#talks"></a></li>
-    <li><a href="#personal"></a></li>
-    <li><a href="/blog"></a></li>
-  </ul>
-</nav>
-<div class="container">
-  <div class="blurb">
-    <h1>Kelsey Pedersen</h1>
-      <img src="headshot.jpg" height="200px" width="200px" style="border-radius:50%">
-  </div>
-  <a name="talks"></a>
-  <a name="personal"></a>
-</div>
+<nav class="navbar is-transparent">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="http://www.kelseypedersen.com">
+      Kelsey Pedersen
+    </a>
 
-<footer>
-  <ul>
-    <li><a href="mailto:notmyrealaddress@gmail.com">email</a></li>
-    <li><a href="https://github.com/kelseypedersen">github.com/kelseypedersen</a></li>
-  </ul>
-</footer>
+    <a class="navbar-item is-hidden-desktop" href="https://github.com/kelseypedersen" target="_blank">
+      <span class="icon" style="color: #333;">
+        <i class="fa fa-lg fa-github"></i>
+      </span>
+    </a>
+
+    <a class="navbar-item is-hidden-desktop" href="https://twitter.com/kelsey_pedersen" target="_blank">
+      <span class="icon" style="color: #55acee;">
+        <i class="fa fa-lg fa-linkedin"></i>
+      </span>
+    </a>
+  </div>
+
+  <div id="navMenuTransparentExample" class="navbar-menu">
+    <div class="navbar-start">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link " href="#">
+          Talks
+        </a>
+        <div id="blogDropdown" class="navbar-dropdown is-boxed" data-style="width: 18rem;">
+
+          <a class="navbar-item" href="#">
+            <div class="navbar-content">
+              <p>
+                <small class="has-text-link">Ruby Conference: 15 Nov 2017</small>
+              </p>
+              <p>Augmenting Human Decision Making with Data Science</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <a class="navbar-item is-hidden-desktop-only" href="https://github.com/kelseypedersen" target="_blank">
+        <span class="icon" style="color: #333;">
+          <i class="fa fa-lg fa-github"></i>
+        </span>
+      </a>
+      <a class="navbar-item is-hidden-desktop-only" href="https://linkedin.com/in/kelseypedersen" target="_blank">
+        <span class="icon" style="color: #55acee;">
+          <i class="fa fa-lg fa-linkedin"></i>
+        </span>
+      </a>
+      <div class="navbar-item">
+        <div class="field is-grouped">
+          <p class="control">
+            <a class="bd-tw-button button"
+               data-social-network="Twitter"
+               data-social-action="tweet"
+               data-social-target="http://bulma.io"
+               target="_blank"
+               href="https://twitter.com/intent/tweet?text=Wow check out Kelsey Pedersen's portfolio website!&hashtags=kelseyrocks&url=http://kelseypedersen.com">
+  <span class="icon">
+    <i class="fa fa-twitter"></i>
+  </span>
+              <span>
+    Tweet
+  </span>
+            </a>
+
+          </p>
+          <p class="control">
+            <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.6.0/bulma-0.6.0.zip">
+              <span class="icon">
+                <i class="fa fa-download"></i>
+              </span>
+              <span>Download</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<section class="hero bd-is-love bd-rainbow">
+  <div class="container">
+    <div class="section">
+      <div class="columns">
+        <div class="column">
+          <h1 class="title">
+            Hey. My name is Kelsey.
+          </h1>
+          <p class="subtitle">
+            I am a software engineer at <strong>Stitch Fix</strong>!
+            We use a combination of data science, engineering and humans to help people find products they love.
+          </p>
+          <p class="subtitle">
+            In my free time I love traveling and writing software to help you plan your next trip.
+          </p>
+        </div>
+        <div class="column headshot">
+          <img src="headshot.jpg" height="200" width="200">
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="tiles">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical is-8">
+            <div class="tile is-parent">
+              <article class="tile is-child notification box">
+                <p class="title">Wide tile</p>
+                <p class="subtitle">Aligned with the right tile</p>
+                <div class="content">
+                  <!-- Content -->
+                </div>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification box">
+                <p class="title">Wide tile</p>
+                <p class="subtitle">Aligned with the right tile</p>
+                <div class="content">
+                  <!-- Content -->
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification box">
+              <div class="content">
+                <p class="title">Tall tile</p>
+                <p class="subtitle">With even more content</p>
+                <div class="content">
+                  <!-- Content -->
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 </body>
 </html>
